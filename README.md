@@ -51,7 +51,9 @@ importModule("./Lib1.js").then(Lib1 => {
 ```
 
 
-## Examples
+## Demo
+
+https://uupaa.github.io/dynamic-import-polyfill/test/index.html
 
 ```html
 <!DOCTYPE html><head><meta charset="utf-8"><title>dynamic-import-polyfill</title>
@@ -90,3 +92,4 @@ importModule("./Lib1.js").then(Lib1 => {
 </body>
 </html>
 ```
+
