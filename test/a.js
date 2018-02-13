@@ -1,4 +1,5 @@
-import "./b.js";
+//import "./b.js";
+
 
 export function a() {
   return "a";

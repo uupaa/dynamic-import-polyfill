@@ -11,7 +11,7 @@ importModule() is an alternative implementation for environments where [import()
 | Mac Safari         | 10.1       | 11       | :o:                           |
 | Mobile Safari      | 10.3       | 11       | :o:                           |
 | Firefox            | 55         | :x:      | :o:                           |
-| Edge               | 16         | :x:      | :bomb: (does not work with abs-url?) |
+| Edge               | 16         | :x:      | :o: (Partial support)         |
 
 Browser should supports are ES Modules, Promise, Blob and window.URL functions.
 
