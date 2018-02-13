@@ -11,7 +11,7 @@ importModule() is an alternative implementation for environments where [import()
 | Mac Safari         | 10.1       | 11       | :o:                           |
 | Mobile Safari      | 10.3       | 11       | :o:                           |
 | Firefox            | 55         | :x:      | :o:                           |
-| Edge               | 16         | :x:      | :o:                           |
+| Edge               | 16         | :x:      | :bomb: (does not work with abs-url?) |
 
 Browser should supports are ES Modules, Promise, Blob and window.URL functions.
 
@@ -55,7 +55,8 @@ importModule("./Lib1.js").then(Lib1 => {
 
 - [use native import() or polyfill importModule()](https://uupaa.github.io/dynamic-import-polyfill/test/index.html)
 - [use native import()](https://uupaa.github.io/dynamic-import-polyfill/test/native.html)
-- [use polyfill importModule()](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.html)
+- [use polyfill importModule(abs-url)](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.html)
+- [use polyfill importModule(rel-url)](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.local.html)
 
 ```html
 <!DOCTYPE html><head><meta charset="utf-8"><title>dynamic-import-polyfill</title>

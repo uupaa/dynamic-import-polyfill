@@ -14,27 +14,16 @@
 
     (async() => {
       const Modules = {
-        a: "https://uupaa.github.io/dynamic-import-polyfill/test/a.js",
-        b: "https://uupaa.github.io/dynamic-import-polyfill/test/b.js",
-        c: "https://uupaa.github.io/dynamic-import-polyfill/test/c.js",
+        a: "./a.js",
+        b: "./b.js",
+        c: "./c.js",
       };
 
-      const usePolyfill = Date.now() % 2;
-
-      if (usePolyfill) {
         console.log("use polyfill");
         const { a } = await importModule(Modules.a);
         const { default: b } = await importModule(Modules.b);
         const { c } = await importModule(Modules.c);
         console.log( a(), b(), c() );
-      } else {
-        console.log("use native");
-        // use native
-        const { a } = await import(Modules.a);
-        const { default: b } = await import(Modules.b);
-        const { c } = await import(Modules.c);
-        console.log( a(), b(), c() );
-      }
     })();
   </script>
 </body>
