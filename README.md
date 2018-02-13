@@ -53,13 +53,14 @@ importModule("./Lib1.js").then(Lib1 => {
 
 ## Demo
 
-https://uupaa.github.io/dynamic-import-polyfill/test/index.html
+- [use native import() or polyfill importModule()](https://uupaa.github.io/dynamic-import-polyfill/test/index.html)
+- [use native import()](https://uupaa.github.io/dynamic-import-polyfill/test/native.html)
+- [use polyfill importModule()](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.html)
 
 ```html
 <!DOCTYPE html><head><meta charset="utf-8"><title>dynamic-import-polyfill</title>
 </head>
 <body>
-  <div><a href="https://github.com/uupaa/dynamic-import-polyfill">dynamic-import-polyfill</a> test page</div>
 
   <script type="module">
     import { importModule } from "../importModule.js";
