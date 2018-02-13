@@ -1,4 +1,4 @@
-//import "./a.js"; // cyclic import
+import "./a.js"; // cyclic import
 
 export function c() {
   return "c";
