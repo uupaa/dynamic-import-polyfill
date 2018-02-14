@@ -2,14 +2,10 @@
 </head>
 <body>
   <div>Back to <a href="https://github.com/uupaa/dynamic-import-polyfill">dynamic-import-polyfill</a> repository</div>
-  <ul>
-    <li><a href="./index.html">use native import() or polyfill importModule()</a></li>
-    <li><a href="./native.html">use native import()</a></li>
-    <li><a href="./polyfill.html">use polyfill importModule(abs-url)</a></li>
-    <li><a href="./polyfill.local.html">use polyfill importModule(rel-url)</a></li>
-  </ul>
+  <div class="link-contener"></div>
 
   <script type="module">
+    import "./link.js";
     import { importModule } from "../importModule.js";
 
     (async() => {

@@ -10,16 +10,12 @@
 
     (async() => {
       const Modules = {
-        a: "https://uupaa.github.io/dynamic-import-polyfill/test/a.js",
-        b: "https://uupaa.github.io/dynamic-import-polyfill/test/b.js",
-        c: "https://uupaa.github.io/dynamic-import-polyfill/test/c.js",
+        a: "./a-b-c.js",
       };
 
-        console.log("use polyfill");
+        console.log("use polyfill edge");
         const { a } = await importModule(Modules.a);
-        const { default: b } = await importModule(Modules.b);
-        const { c } = await importModule(Modules.c);
-        console.log( a(), b(), c() );
+        console.log( a() );
     })();
   </script>
 </body>

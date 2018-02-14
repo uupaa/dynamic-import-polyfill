@@ -1,30 +1,33 @@
 function toAbsoluteURL(url) {
   const a = document.createElement("a");
-  a.setAttribute("href", url);    // <a href="hoge.htm">
-  return a.cloneNode(false).href; // -> "http://example.com/hoge.htm"
+  a.setAttribute("href", url);    // <a href="hoge.html">
+  return a.cloneNode(false).href; // -> "http://example.com/hoge.html"
 }
 
 export function importModule(url) {
   return new Promise((resolve, reject) => {
+    const vector = "$importModule$" + Math.random().toString(32).slice(2);
     const script = document.createElement("script");
-    const tempGlobal = "$importModule$" + Math.random().toString(32).slice(2);
+    const destructor = () => {
+      delete window[vector];
+      script.onerror = null;
+      script.onload = null;
+      script.remove();
+      URL.revokeObjectURL(script.src);
+      script.src = "";
+    };
+    script.defer = "defer";
     script.type = "module";
-
-    script.onload = () => {
-      resolve(window[tempGlobal]);
-      delete window[tempGlobal];
-      script.remove();
-      URL.revokeObjectURL(script.src);
-    };
     script.onerror = () => {
-      reject(new Error(`Failed to load module script with URL ${url}`));
-      delete window[tempGlobal];
-      script.remove();
-      URL.revokeObjectURL(script.src);
+      reject(new Error(`Failed to import: ${url}`));
+      destructor();
     };
-
+    script.onload = () => {
+      resolve(window[vector]);
+      destructor();
+    };
     const absURL = toAbsoluteURL(url);
-    const loader = `import * as m from "${absURL}"; window.${tempGlobal} = m;`;
+    const loader = `import * as m from "${absURL}"; window.${vector} = m;`; // export Module
     const blob = new Blob([loader], { type: "text/javascript" });
     script.src = URL.createObjectURL(blob);
 
