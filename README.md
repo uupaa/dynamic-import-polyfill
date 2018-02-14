@@ -4,7 +4,7 @@ importModule() is an alternative implementation for environments where [import()
 
 ## Browser support
 
-| Browser            | ES Modules | import() | importModule() <br>(polyfill) |
+| Browser            | ES Modules<br>(native) | import()<br>(native) | importModule()<br>(polyfill) |
 |--------------------|------------|----------|-------------------------------|
 | Chrome             | 61         | 63       | :o:                           |
 | Chrome for Android | 61         | 63       | :o:                           |

@@ -4,8 +4,16 @@
   <div>Back to <a href="https://github.com/uupaa/dynamic-import-polyfill">dynamic-import-polyfill</a> repository</div>
   <div class="link-contener"></div>
 
+  <script>
+  window.onerror = (msg, file, line, column, err) => {
+    console.error(msg, file, line, column, err);
+    document.body.innerHTML += `<p>${msg}, ${file}, ${line}, ${column}, ${err}</p>`;
+  };
+  </script>
   <script type="module">
     import "./link.js";
+  </script>
+  <script type="module">
     import { importModule } from "../importModule.js";
 
     (async() => {
