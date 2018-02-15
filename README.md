@@ -59,10 +59,11 @@ importModule("./Lib1.js").then(Lib1 => {
 - [use polyfill importModule(rel-url)](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.rel.html)
 
 ```html
-<!DOCTYPE html><head><meta charset="utf-8"><title>dynamic-import-polyfill</title>
+<!DOCTYPE html><html>
+<head>
+<meta charset="utf-8"><title>dynamic-import-polyfill</title>
 </head>
 <body>
-
   <script type="module">
     import { importModule } from "../importModule.js";
 
