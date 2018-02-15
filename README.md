@@ -55,8 +55,8 @@ importModule("./Lib1.js").then(Lib1 => {
 
 - [use native import() or polyfill importModule()](https://uupaa.github.io/dynamic-import-polyfill/test/index.html)
 - [use native import()](https://uupaa.github.io/dynamic-import-polyfill/test/native.html)
-- [use polyfill importModule(abs-url)](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.html)
-- [use polyfill importModule(rel-url)](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.local.html)
+- [use polyfill importModule(abs-url)](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.abs.html)
+- [use polyfill importModule(rel-url)](https://uupaa.github.io/dynamic-import-polyfill/test/polyfill.rel.html)
 
 ```html
 <!DOCTYPE html><head><meta charset="utf-8"><title>dynamic-import-polyfill</title>
