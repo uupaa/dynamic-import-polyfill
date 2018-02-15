@@ -6,12 +6,12 @@ importModule() is an alternative implementation for environments where [import()
 
 | Browser            | ES Modules<br>(native) | import()<br>(native) | importModule()<br>(polyfill) |
 |--------------------|------------|----------|-------------------------------|
-| Chrome             | 61         | 63       | :o:                           |
-| Chrome for Android | 61         | 63       | :o:                           |
-| Mac Safari         | 10.1       | 11       | :o:                           |
-| Mobile Safari      | 10.3       | 11       | :o:                           |
-| Firefox            | 55         | :x:      | :o:                           |
-| Edge               | 16         | :x:      | :o: (Partial support)         |
+| Chrome             | 61+        | 63+      | 61+                           |
+| Chrome for Android | 61+        | 63+      | 61+                           |
+| Mac Safari         | 10.1+      | 11+      | 10.1+                         |
+| Mobile Safari      | 10.3+      | 11+      | 10.3+                         |
+| Firefox            | 55+        | :x:      | 55+                           |
+| Edge               | 16+        | :x:      | 16+                           |
 
 Browser should supports are ES Modules, Promise, Blob and window.URL functions.
 
