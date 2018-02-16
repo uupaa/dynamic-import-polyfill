@@ -13,7 +13,7 @@ importModule() is an alternative implementation for environments where [import()
 | Firefox            | 54+ (flag1) | :x:<br>(Syntax Error) | 54+ (flag1)     |
 | Edge               | 16+        | :x:<br>(Syntax Error) | 16+              |
 
-> flag1: (dom.moduleScripts.enabled](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016)
+> flag1: [dom.moduleScripts.enabled](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016)
 
 Browser should supports are ES Modules, Promise, Blob and window.URL functions.
 
