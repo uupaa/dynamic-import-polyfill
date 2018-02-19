@@ -1,6 +1,6 @@
 # dynamic import() polyfill
 
-importModule() is an alternative implementation for environments where [import()](https://github.com/tc39/proposal-dynamic-import#using-host-specific-mechanisms) can not be used.
+importModule() is a polyfill of import().
 
 ## Browser support
 
