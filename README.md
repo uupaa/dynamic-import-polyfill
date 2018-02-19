@@ -12,6 +12,7 @@ importModule() is an alternative implementation for environments where [import()
 | Mobile Safari      | 10.3       | 11      | 10.3                         |
 | Firefox            | 54 [:lock:](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016) | :x:<br>(Syntax Error) | 54 [:lock:](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016) |
 | Edge               | 16         | :x:<br>(Syntax Error) | 16              |
+| IE                 | :x:        | :x:      | :x:                          |
 
 Browser should supports are ES Modules, Promise, Blob and window.URL functions.
 
