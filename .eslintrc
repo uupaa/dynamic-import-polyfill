@@ -1,0 +1,40 @@
+{
+  "parserOptions": {
+    "ecmaVersion":      6,
+    "sourceType":       "module"
+  },
+  "env": {
+    "browser":          true,
+    "node":             true,
+    "es6":              true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "strict":           [0],
+    "no-new":           [0],
+    "new-cap":          [0],
+    "no-empty":         [0],
+    "no-shadow":        [0],
+    "camelcase":        [0],
+    "key-spacing":      [0],
+    "dot-notation":     [0],
+    "comma-dangle":     [0],
+    "no-console":       [0],
+    "no-multi-str":     [0],
+    "no-multi-spaces":  [0],
+    "no-control-regex": [0],
+    "no-unused-vars":   [1, { "vars": "all", "args": "after-used"} ],
+    "no-underscore-dangle": [0],
+    "no-use-before-define": [0],
+    "no-inner-declarations": [0]
+  },
+  "globals": {
+    "unescape":         false,
+    "escape":           false,
+    "google":           false
+  }
+}
+
+
