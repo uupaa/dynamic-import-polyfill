@@ -1,17 +1,18 @@
 # dynamic import() polyfill
 
-importModule() is an alternative implementation for environments where [import()](https://github.com/tc39/proposal-dynamic-import#using-host-specific-mechanisms) can not be used.
+importModule() is a polyfill of import().
 
 ## Browser support
 
 | Browser            | ES Modules<br>(native) | import()<br>(native) | importModule()<br>(polyfill) |
 |--------------------|------------|----------|-------------------------------|
-| Chrome             | 61+        | 63+      | 61+                           |
-| Chrome for Android | 61+        | 63+      | 61+                           |
-| Mac Safari         | 10.1+      | 11+      | 10.1+                         |
-| Mobile Safari      | 10.3+      | 11+      | 10.3+                         |
-| Firefox            | 55+        | :x:<br>(Syntax Error) | 55+                           |
-| Edge               | 16+        | :x:<br>(Syntax Error) | 16+                           |
+| Chrome             | 61         | 63      | 61                           |
+| Chrome for Android | 61         | 63      | 61                           |
+| Mac Safari         | 10.1       | 11      | 10.1                         |
+| Mobile Safari      | 10.3       | 11      | 10.3                         |
+| Firefox            | 54 [:lock:](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016) | :x:<br>(Syntax Error) | 54 [:lock:](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016) |
+| Edge               | 16         | :x:<br>(Syntax Error) | 16              |
+| IE                 | :x:        | :x:      | :x:                          |
 
 Browser should supports are ES Modules, Promise, Blob and window.URL functions.
 
