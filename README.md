@@ -18,11 +18,15 @@ Browser should supports are ES Modules, Promise, Blob and window.URL functions.
 
 ## Usage
 
+```
+npm install dynamic-import-polyfill
+```
+
 async / await style
 
 ```js
 <script type="module">
-import { importModule } from "https://uupaa.github.io/dynamic-import-polyfill/importModule.js";
+import { importModule } from "dynamic-import-polyfill/importModule.js";
 
 (async() => {
   const Modules = {
@@ -43,7 +47,7 @@ or Promise style.
 
 ```js
 <script type="module">
-import { importModule } from "https://uupaa.github.io/dynamic-import-polyfill/importModule.js";
+import { importModule } from "dynamic-import-polyfill/importModule.js";
 
 importModule("./Lib1.js").then(Lib1 => {
   const lib1 = new Lib1();
