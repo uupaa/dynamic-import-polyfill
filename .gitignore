@@ -3,6 +3,4 @@ node_modules
 
 ## ignore the file that is automatically regenerated
 .DS_Store
-*.mov
-*.mp4
 

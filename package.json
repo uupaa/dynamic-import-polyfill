@@ -1,21 +1,25 @@
 {
-  "name": "dynamic-import-polyfill",
-  "version": "1.0.1",
+  "name": "@uupaa/dynamic-import-polyfill",
+  "version": "1.0.2",
   "description": "importModule() is a polyfill of import().",
   "repository": {
     "type": "git",
-    "url": "https://github.com/uupaa/dynamic-import-polyfill"
+    "url": "https://github.com/uupaa/dynamic-import-polyfill.git"
   },
-  "scripts": {
-    "bundle": "npm run bundle:es6",
-    "bundle:es6": "rollup -c .rollup.es6.js",
-    "eslint": "eslint importModule.js"
+  "scripts": {},
+  "publishConfig": {
+    "access": "public"
   },
   "author": "uupaa.js@gmail.com",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^4.18.2",
-    "rollup": "^0.56.5",
-    "rollup-plugin-eslint": "^4.0.0"
-  }
+  "main": "importModule.js",
+  "keywords": [
+    "dynamic",
+    "import",
+    "polyfill",
+    "module",
+    "ESModule",
+    "ESModules",
+    "uupaa"
+  ]
 }

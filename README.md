@@ -1,20 +1,30 @@
-# dynamic import() polyfill
+# Dynamic import() polyfill
 
-importModule() is a polyfill of import().
+importModule() is a polyfill of dynamic import JavaScript function.
+
+## Prepare
+
+`npm i -S @uupaa/dynamic-import-polyfill`
 
 ## Browser support
 
-| Browser            | ES Modules<br>(native) | import()<br>(native) | importModule()<br>(polyfill) |
-|--------------------|------------|----------|-------------------------------|
-| Chrome             | 61         | 63      | 61                           |
-| Chrome for Android | 61         | 63      | 61                           |
-| Mac Safari         | 10.1       | 11      | 10.1                         |
-| Mobile Safari      | 10.3       | 11      | 10.3                         |
-| Firefox            | 54 [:lock:](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016) | :x:<br>(Syntax Error) | 54 [:lock:](https://developer.mozilla.org/en-US/Firefox/Experimental_features#ECMAScript_2016) |
-| Edge               | 16         | :x:<br>(Syntax Error) | 16              |
-| IE                 | :x:        | :x:      | :x:                          |
+| Browser                   | `<script type="module">` | `import()`<br>(js native) | `importModule()`<br>(polyfill) |
+|---------------------------|------------|---------|------------------------------|
+| Chrome                    | 61+        | 63+     | 61+                          |
+| Chrome (Android)          | 61+        | 63+     | 61+                          |
+| Safari                    | 10.1+      | 11+     | 10.1+                        |
+| Safari (iOS)              | 10.3+      | 11+     | 10.3+                        |
+| Firefox                   | 60+        | 67+     | 60+                          |
+| Edge                      | 16+        | :x:     | 16+                          |
+| new Edge (Chromium based) | 76+        | 76+     | 76+                          |
+| IE                        | :x:        | :x:     | :x:                          |
 
-Browser should supports are ES Modules, Promise, Blob and window.URL functions.
+Browser should supports are ES Modules(`<script type="module">`), Promise, Blob and window.URL functions.
+
+`import()` function browser compatibilitiy resources:
+
+- MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Browser_compatibility
+- Can I use: https://caniuse.com/#search=import
 
 ## Usage
 
